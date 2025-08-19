@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="jogo.css">
+<script src="../script.js" defer></script>
+<script src="./jogo.js" defer></script>
+<link rel="shortcut icon" href="../UF SENAI.png" type="image/x-icon">
+<head>
+  <meta charset="UTF-8">
+  <title>UF SENAI</title>
+</head>
+<body>
+  <h1>🎮 Batalha por Turnos</h1>
+
+  <h3>👤 Sua Vida</h3>
+  <div class="barra-vida">
+    <div class="vida" id="barraVidaJogador"></div>
+  </div>
+  <p>Vida do Jogador: <span id="vidaJogador">100</span></p>
+
+  <h3>🤖 Vida do Adversário</h3>
+  <div class="barra-vida">
+    <div class="vida inimigo" id="barraVidaBot"></div>
+  </div>
+  <p>Vida do Bot: <span id="vidaBot">100</span></p>
+
+  <button class="botao atacar" onclick="turno('atacar')"><span>ATACAR</span></button>
+  <button class="botao defender" onclick="turno('defender')"><span>DEFENDER</span></button>
+  <button class="botao esquivar" onclick="turno('esquivar')"><span>ESQUIVAR</span></button>
+
+  <div id="resultado"></div>
+
+  <button class="btnSair" onclick="desistirJogo ()">DESISTIR</button>
+</body>
+</html>

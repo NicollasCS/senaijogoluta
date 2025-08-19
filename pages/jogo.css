@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 40px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.atacar { background-color: #e74c3c;}
+.defender { background-color: #3498db;}
+.esquivar { background-color: #2ecc71;}
+
+.barra-vida {
+    width: 300px;
+    height: 30px;
+    background-color: #555;
+    border-radius: 5px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.vida {
+    height: 100%;
+    background-color: #27ae60;
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.vida.inimigo {
+    background-color: #c0392b;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    min-height: 60px;
+}
