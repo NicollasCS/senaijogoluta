@@ -1,5 +1,5 @@
-let vidaJogador = 100;
-let vidaBot = 100;
+let vidaJogador = 350;
+let vidaBot = 350;
 let round = 0;
 
 function rolarDado() {
@@ -15,8 +15,8 @@ function atualizarVida() {
 
 function recuperarVida() {
   if (round % 3 === 0 && round !== 0) {
-    vidaJogador = Math.min(vidaJogador + 10, 100);
-    vidaBot = Math.min(vidaBot + 10, 100);
+    vidaJogador = Math.min(vidaJogador + 10, 350);
+    vidaBot = Math.min(vidaBot + 10, 350);
   }
 }
 
@@ -105,8 +105,8 @@ function turno(acao) {
   }
 
   // Limites
-  vidaJogador = Math.max(0, Math.min(vidaJogador, 100));
-  vidaBot = Math.max(0, Math.min(vidaBot, 100));
+  vidaJogador = Math.max(0, Math.min(vidaJogador, 350));
+  vidaBot = Math.max(0, Math.min(vidaBot, 350));
 
   atualizarVida();
   document.getElementById('resultado').textContent = resultado;
@@ -118,4 +118,5 @@ function turno(acao) {
       window.location.href="../index.html";
     }, 500);
   }
+
 }
